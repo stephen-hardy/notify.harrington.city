@@ -1,1 +1,77 @@
-notify.harrington.city/test
+<form method="post" action="https://scripts.dreamhost.com/add_list.cgi">
+
+	<input type="hidden" name="list" value="meetings@harrington.city">
+	<input type="hidden" name="domain" value="harrington.city">
+	<!--Visible Fields-->
+	<div>
+		<label for="name">Name:</label>
+		<input type="text" name="name">
+	</div>
+	<!-- Required: -->
+	<div>
+		<label for="email">Email:</label>
+		<input type="text" name="email" placeholder="Enter a valid email" required>
+	</div>
+
+	<!-- Optional: -->
+	<div>
+		<label for="confirm-email">Confirm Email:</label>
+		<input type="text" name="address2" placeholder="Please verify you email" required>
+		<input type="hidden" name="req_address2" value="1" input name="email" />
+	</div>
+	<div>
+		<label for="street">Street:</label>
+		<input type="text" name="street" required >
+	</div>
+
+	<div>
+		<label for="city">City:</label>
+		<input type="text" name="city" required>
+	</div>
+
+	<div>
+		<label for="state">State:</label>
+		<input type="text" name="state"  required>
+	</div>
+
+	<div>
+		<label for="zip">Zipcode:</label>
+		<input type="text" name="zip"  required>
+	</div>
+	<div>
+		<label for="zip">Country:</label>
+		<input type="text" name="country" required>
+	</div>
+
+	<div class="button">
+		<input type="submit" name="submit" value="Join Our Announcement List">
+	</div>
+
+	<!-- Optional Unsubscribe Button -->
+	<div class="button">
+		<input type="submit" name="unsub" value="Remove from list">
+	</div>
+</form>
+<style>
+/* Centers the form on the page */
+form {
+  margin: 0 auto;
+  width: 400px;
+  /* Add a border */
+  border: 1px solid #CCC;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+/* add space between fields */
+form div {
+  margin-bottom: 15px;
+}
+
+/* Space input fields */
+label {
+  display: inline-block;
+  width: 125px;
+  text-align: left;
+}
+</style>
